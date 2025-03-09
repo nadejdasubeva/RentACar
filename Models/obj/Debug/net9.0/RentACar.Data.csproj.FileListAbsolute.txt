@@ -1,0 +1,11 @@
+C:\Users\pc\Desktop\RentACar\Models\bin\Debug\net9.0\RentACar.Data.deps.json
+C:\Users\pc\Desktop\RentACar\Models\bin\Debug\net9.0\RentACar.Data.dll
+C:\Users\pc\Desktop\RentACar\Models\bin\Debug\net9.0\RentACar.Data.pdb
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.AssemblyInfo.cs
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.dll
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\refint\RentACar.Data.dll
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.pdb
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\ref\RentACar.Data.dll

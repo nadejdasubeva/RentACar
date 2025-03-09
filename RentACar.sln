@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Web", "RentACar\RentACar.Web.csproj", "{67BF6021-1AC5-4C49-9E0D-97E6EA9839DE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{55D7B05A-86A0-4889-90E1-B337156B21EA} = {55D7B05A-86A0-4889-90E1-B337156B21EA}
+		{F960734E-9687-44E8-9BE0-5F295043CEC3} = {F960734E-9687-44E8-9BE0-5F295043CEC3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Data", "Models\RentACar.Data.csproj", "{F960734E-9687-44E8-9BE0-5F295043CEC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Controllers", "Controllers\RentACar.Controllers.csproj", "{55D7B05A-86A0-4889-90E1-B337156B21EA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F960734E-9687-44E8-9BE0-5F295043CEC3} = {F960734E-9687-44E8-9BE0-5F295043CEC3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Repositories", "RentACar.Repositories\RentACar.Repositories.csproj", "{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.Services", "RentACar.Services\RentACar.Services.csproj", "{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67BF6021-1AC5-4C49-9E0D-97E6EA9839DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67BF6021-1AC5-4C49-9E0D-97E6EA9839DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67BF6021-1AC5-4C49-9E0D-97E6EA9839DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67BF6021-1AC5-4C49-9E0D-97E6EA9839DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F960734E-9687-44E8-9BE0-5F295043CEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F960734E-9687-44E8-9BE0-5F295043CEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F960734E-9687-44E8-9BE0-5F295043CEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F960734E-9687-44E8-9BE0-5F295043CEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D7B05A-86A0-4889-90E1-B337156B21EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D7B05A-86A0-4889-90E1-B337156B21EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D7B05A-86A0-4889-90E1-B337156B21EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D7B05A-86A0-4889-90E1-B337156B21EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0F2AB1C-4213-45FA-AAF1-20201BD3B9E9}
+	EndGlobalSection
+EndGlobal
