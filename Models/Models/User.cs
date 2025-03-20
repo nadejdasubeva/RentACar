@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RentACar.Data.Models;
 
-class User : IdentityUser
+public class User : IdentityUser
 {
     [Required]
     public string Username { get; set; }
@@ -25,7 +25,7 @@ class User : IdentityUser
     [Required]
     public string Email { get; set; }
 
+    public virtual List<Request> Requests { get; set; } = new List<Request>();
 
 
- 
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RentACar.Data.Models
 {
-    class Auto
+    public class Auto
     {
         [Key]
         public int Id { get; set; }
@@ -31,6 +31,8 @@ namespace RentACar.Data.Models
 
         [Required]
         public int PricePerDay { get; set; }
+
+        public virtual List<Request> Requests { get; set; } = new List<Request>();
 
 
 

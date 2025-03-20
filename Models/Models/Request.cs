@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RentACar.Data.Models
 {
-    class Request
+    public class Request
     {
         [Key]
         public int Id { get; set; }
