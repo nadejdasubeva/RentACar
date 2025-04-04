@@ -1,0 +1,16 @@
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\bin\Debug\net9.0\RentACar.Repositories.deps.json
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\bin\Debug\net9.0\RentACar.Repositories.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\bin\Debug\net9.0\RentACar.Repositories.pdb
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\bin\Debug\net9.0\RentACar.Data.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\bin\Debug\net9.0\RentACar.Data.pdb
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.Repositories.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.Repositories.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.Repositories.AssemblyInfo.cs
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.Repositories.sourcelink.json
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.72B270F2.Up2Date
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.Repositories.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\refint\RentACar.Repositories.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\RentACar.Repositories.pdb
+C:\Users\pc\Desktop\RentACar\RentACar.Repositories\obj\Debug\net9.0\ref\RentACar.Repositories.dll

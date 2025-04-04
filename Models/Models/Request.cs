@@ -24,7 +24,9 @@ namespace RentACar.Data.Models
         public DateTime ReturnDate { get; set; }
 
         [ForeignKey("UserId")]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
+        public bool IsApproved { get; set; } = false;
+        public bool IsDeclined { get; set; } = false;
 
         public User User { get; set; }
 
