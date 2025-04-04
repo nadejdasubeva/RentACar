@@ -3592,6 +3592,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "CloudinaryDotNet": "1.27.4",
+          "Microsoft.AspNetCore.Http.Features": "2.3.0",
           "Microsoft.Extensions.Options": "9.0.2"
         },
         "compile": {
@@ -10070,23 +10071,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\katik\\.nuget\\packages\\": {},
+    "C:\\Users\\pc\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\RentACar\\RentACar.Web.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\RentACar.Web.csproj",
       "projectName": "RentACar.Web",
-      "projectPath": "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\RentACar\\RentACar.Web.csproj",
-      "packagesPath": "C:\\Users\\katik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\RentACar\\obj\\",
+      "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\RentACar.Web.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\katik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10095,20 +10096,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\Controllers\\RentACar.Controllers.csproj": {
-              "projectPath": "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\Controllers\\RentACar.Controllers.csproj"
+            "C:\\Users\\pc\\Desktop\\RentACar\\Controllers\\RentACar.Controllers.csproj": {
+              "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\Controllers\\RentACar.Controllers.csproj"
             },
-            "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj": {
-              "projectPath": "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj"
+            "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj": {
+              "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj"
             },
-            "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj": {
-              "projectPath": "C:\\Users\\katik\\OneDrive\\Работен плот\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj"
+            "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\RentACar.Services.csproj": {
+              "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\RentACar.Services.csproj"
             }
           }
         }

@@ -27,14 +27,13 @@ namespace RentACar.Data.Models
         public string? Description { get; set; }
 
         [Required]
-        public string Image{ get; set; }
+        public string Image { get; set; }
 
         [Required]
         public int PricePerDay { get; set; }
+        public bool IsAvailable { get; set; } = true;
 
         public virtual List<Request> Requests { get; set; } = new List<Request>();
-
-
 
     }
 }

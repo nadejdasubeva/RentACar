@@ -8,7 +8,7 @@ namespace RentACar.Data;
 public class ApplicationDbContext : IdentityDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : base(options)
+       : base(options)
     {
     }
     public DbSet<Auto> Autos { get; set; }
@@ -19,61 +19,69 @@ public class ApplicationDbContext : IdentityDbContext
     {
         base.OnModelCreating(builder);
 
-        string adminUserId = "a820ccf9-54ac-4047-b4b5-48dab0dc962b";
-        string adminRoleId = "a23a7ee8-beb5-4238-ad8a-88d54b3c3d29";
+        builder.Entity<Request>()
+            .HasOne(r => r.Auto)
+            .WithMany(a => a.Requests)
+            .HasForeignKey(r => r.AutoId)
+            .OnDelete(DeleteBehavior.Cascade);
 
-        string userRoleId = "a23a7ee8-beb5-4238-ad8a-88d54b3c3d28";
+        builder.Entity<Request>()
+            .HasOne(r => r.User)
+            .WithMany(u => u.Requests)
+            .HasForeignKey(r => r.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
 
-        // Seed Admin role.
-        builder
-            .Entity<IdentityRole>()
-            .HasData(new IdentityRole
-            {
-                Name = "Administrator",
-                NormalizedName = "ADMINISTRATOR",
-                Id = adminRoleId,
-                ConcurrencyStamp = Guid.NewGuid().ToString()
-            });
+        // Constants for seeded data
+        const string adminUserId = "a820ccf9-54ac-4047-b4b5-48dab0dc962b";
+        const string adminRoleId = "a23a7ee8-beb5-4238-ad8a-88d54b3c3d29";
+        const string userRoleId = "a23a7ee8-beb5-4238-ad8a-88d54b3c3d28";
+        const string adminConcurrencyStamp = "12345678-1234-1234-1234-123456789012";
+        const string userConcurrencyStamp = "12345678-1234-1234-1234-123456789013";
+        const string adminPasswordHash = "AQAAAAIAAYagAAAAEJmsXmTvQxGXj8Yzq1uXW5JZ6+7V9kKj1pZ2h3Y4vR4X5nB6r7s8W3Y2w1oA1xg=="; // Hash for "Abc123!"
 
-        builder
-           .Entity<IdentityRole>()
-           .HasData(new IdentityRole
-           {
-               Name = "BasicUser",
-               NormalizedName = "BASICUSER",
-               Id = userRoleId,
-               ConcurrencyStamp = Guid.NewGuid().ToString()
-           });
+        // Seed Admin role
+        builder.Entity<IdentityRole>().HasData(new IdentityRole
+        {
+            Name = "Administrator",
+            NormalizedName = "ADMINISTRATOR",
+            Id = adminRoleId,
+            ConcurrencyStamp = adminConcurrencyStamp
+        });
 
-        // Create admin user.
-        var appUser = new IdentityUser
+        // Seed User role
+        builder.Entity<IdentityRole>().HasData(new IdentityRole
+        {
+            Name = "BasicUser",
+            NormalizedName = "BASICUSER",
+            Id = userRoleId,
+            ConcurrencyStamp = userConcurrencyStamp
+        });
+
+        // Seed admin user
+        builder.Entity<IdentityUser>().HasData(new IdentityUser
         {
             Id = adminUserId,
             Email = "admin@admin.com",
             NormalizedEmail = "ADMIN@ADMIN.COM",
             EmailConfirmed = true,
             UserName = "admin@admin.com",
-            NormalizedUserName = "ADMIN@ADMIN.COM"
-        };
+            NormalizedUserName = "ADMIN@ADMIN.COM",
+            PasswordHash = adminPasswordHash,
+            SecurityStamp = string.Empty,
+            ConcurrencyStamp = adminConcurrencyStamp,
+            PhoneNumber = null,
+            PhoneNumberConfirmed = false,
+            TwoFactorEnabled = false,
+            LockoutEnd = null,
+            LockoutEnabled = true,
+            AccessFailedCount = 0
+        });
 
-        // Set initial admin password.
-        var ph = new PasswordHasher<IdentityUser>();
-
-        // Don't forget to change admin password after initial account creation.
-        appUser.PasswordHash = ph.HashPassword(appUser, "Abc123!");
-
-        // Seed user.
-        builder
-            .Entity<IdentityUser>()
-            .HasData(appUser);
-
-        // Set user role to admin.
-        builder
-            .Entity<IdentityUserRole<string>>()
-            .HasData(new IdentityUserRole<string>
-            {
-                RoleId = adminRoleId,
-                UserId = adminUserId
-            });
+        // Set user role to admin
+        builder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
+        {
+            RoleId = adminRoleId,
+            UserId = adminUserId
+        });
     }
 }

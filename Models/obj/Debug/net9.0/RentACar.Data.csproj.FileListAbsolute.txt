@@ -9,3 +9,7 @@ C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.dll
 C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\refint\RentACar.Data.dll
 C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.pdb
 C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\ref\RentACar.Data.dll
+C:\Users\pc\Desktop\RentACar\Models\bin\Debug\net9.0\RentACar.Data.runtimeconfig.json
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.sourcelink.json
+C:\Users\pc\Desktop\RentACar\Models\obj\Debug\net9.0\RentACar.Data.genruntimeconfig.cache

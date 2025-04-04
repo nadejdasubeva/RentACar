@@ -1,0 +1,13 @@
+C:\Users\pc\Desktop\RentACar\RentACar.Services\bin\Debug\net9.0\RentACar.Services.deps.json
+C:\Users\pc\Desktop\RentACar\RentACar.Services\bin\Debug\net9.0\RentACar.Services.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Services\bin\Debug\net9.0\RentACar.Services.pdb
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.AssemblyInfo.cs
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.sourcelink.json
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\refint\RentACar.Services.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.pdb
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\ref\RentACar.Services.dll
