@@ -1,0 +1,35 @@
+﻿@model RentACar.Data.ViewModels.UserVM
+
+<h2>User Details</h2>
+<hr />
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Name:</dt>
+            <dd class="col-sm-9">@Model.Firstname @Model.Surname</dd>
+
+            <dt class="col-sm-3">Email:</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+
+            <dt class="col-sm-3">Phone:</dt>
+            <dd class="col-sm-9">@Model.PhoneNumber</dd>
+
+            <dt class="col-sm-3">NIN:</dt>
+            <dd class="col-sm-9">@Model.NIN</dd>
+
+            <dt class="col-sm-3">Role:</dt>
+            <dd class="col-sm-9">
+                <span class="badge @(Model.Role == "Admin" ? "bg-danger" : "bg-primary")">
+                    @Model.Role
+                </span>
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="GetAllUsers" class="btn btn-secondary">
+        <i class="fas fa-arrow-left"></i> Back to List
+    </a>
+</div>
