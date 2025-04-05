@@ -10,6 +10,7 @@ namespace RentACar.Repositories.Interfaces
 {
     internal interface IAutoRepository
     {
+        //az
         Task<IEnumerable<Auto>> GetAllAutosAsync();
         Task<IEnumerable<Auto>> GetAllAutosFreeAsync(DateTime pickUpDate, DateTime returnDate);
         Task<Auto> GetAutoByIdAsync(int autoId);

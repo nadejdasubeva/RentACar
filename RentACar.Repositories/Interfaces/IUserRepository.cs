@@ -10,6 +10,7 @@ namespace RentACar.Repositories.Interfaces
 {
     public interface IUserRepository
     {
+        //az
         Task<IEnumerable<User>> GetAllAsync();
         Task<bool> AddAsync(User user);
         Task<bool> UpdateAsync(User user);
