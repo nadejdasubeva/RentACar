@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RentACar.Data;
+using RentACar.Data.Models; // Make sure this contains your User model
+using RentACar.Repositories;
+using RentACar.Repositories.Interfaces;
 using RentACar.Services;
 using RentACar.Services.Helpers;
 using RentACar.Services.Interfaces;
@@ -14,21 +17,32 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-        var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+        var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+            ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer(connectionString));
 
         builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-        builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
-            options.SignIn.RequireConfirmedAccount = true)
-            .AddEntityFrameworkStores<ApplicationDbContext>()
-            .AddDefaultTokenProviders();
+        builder.Services.AddIdentity<User, IdentityRole>()
+        .AddEntityFrameworkStores<ApplicationDbContext>()
+        .AddDefaultUI()
+        .AddDefaultTokenProviders();
 
-        builder.Services.AddControllersWithViews();
+        // Add repositories with proper dependencies
         builder.Services.AddScoped<IPhotoService, PhotoService>();
+        builder.Services.AddScoped<IAutoRepository, AutoRepository>();
+        builder.Services.AddScoped<IRequestRepository, RequestRepository>();
+        builder.Services.AddScoped<IBookingPeriodRepository, BookingPeriodRepository>();
+
+        // Make sure UserRepository is properly registered
+        builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddScoped<IUserService, UserService>();
+
         builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
+        builder.Services.AddControllersWithViews();
+        builder.Services.AddRazorPages();
 
         var app = builder.Build();
 
@@ -40,22 +54,23 @@ public class Program
         else
         {
             app.UseExceptionHandler("/Home/Error");
-            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
             app.UseHsts();
         }
 
         app.UseHttpsRedirection();
+        app.UseStaticFiles();
         app.UseRouting();
 
+        // Authentication must come before Authorization
+        app.UseAuthentication();
         app.UseAuthorization();
 
-        app.MapStaticAssets();
+        // Simplified endpoint configuration
         app.MapControllerRoute(
             name: "default",
-            pattern: "{controller=Home}/{action=Index}/{id?}")
-            .WithStaticAssets();
-        app.MapRazorPages()
-           .WithStaticAssets();
+            pattern: "{controller=Home}/{action=Index}/{id?}");
+
+        app.MapRazorPages();
 
         app.Run();
     }

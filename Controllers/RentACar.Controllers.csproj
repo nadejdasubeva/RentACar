@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Models\RentACar.Data.csproj" />
+    <ProjectReference Include="..\RentACar.Repositories\RentACar.Repositories.csproj" />
     <ProjectReference Include="..\RentACar.Services\RentACar.Services.csproj" />
   </ItemGroup>
 

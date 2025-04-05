@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Auto>
+
+@{
+    ViewData["Title"] = "All Autos";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+
+    @if (User.IsInRole("Administrator"))
+    {
+        <a asp-action="Create" class="btn btn-primary mb-4">Add New Auto</a>
+    }
+
+    <div class="row">
+        @foreach (var auto in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@auto.Image" class="card-img-top" alt="@auto.Brand @auto.Model" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@auto.Brand @auto.Model</h5>
+                        <p class="card-text">
+                            <span class="badge bg-info">@auto.Year</span>
+                            <span class="badge bg-success">@auto.PassengerSeats seats</span>
+                            <span class="badge bg-warning">$@auto.PricePerDay/day</span>
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Details" asp-route-id="@auto.Id" class="btn btn-outline-primary">Details</a>
+                            @if (User.IsInRole("Administrator"))
+                            {
+                                <div>
+                                    <a asp-action="Edit" asp-route-id="@auto.Id" class="btn btn-outline-secondary">Edit</a>
+                                    <a asp-action="Delete" asp-route-id="@auto.Id" class="btn btn-outline-danger">Delete</a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .card {
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .badge {
+        margin-right: 5px;
+    }
+</style>

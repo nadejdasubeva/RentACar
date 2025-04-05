@@ -7,7 +7,7 @@ using RentACar.Data.Models;
 
 namespace RentACar.Repositories.Interfaces
 {
-    internal interface IRequestRepository
+    public interface IRequestRepository
     {
         //az
         Task<IEnumerable<Request>> GetAllRequestsAsync();
