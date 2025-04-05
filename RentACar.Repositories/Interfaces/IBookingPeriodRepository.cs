@@ -9,7 +9,9 @@ namespace RentACar.Repositories.Interfaces
 {
     public interface IBookingPeriodRepository
     {
+        //az
         Task<bool> IsAutoAvailableAsync(int autoId, DateTime startDate, DateTime endDate);
         Task<BookingResult> BookAutoAsync(int autoId, DateTime startDate, DateTime endDate);
+        Task<bool> SaveAsync();
     }
 }
