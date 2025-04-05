@@ -16,7 +16,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentACar.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfadc42df8fd53e496302ebe5a07ad5033882ea0")]
+=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8be6377b4244752b61c29db211a7ee42240b21be")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("RentACar.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentACar.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

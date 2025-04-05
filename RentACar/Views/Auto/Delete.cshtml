@@ -1,0 +1,33 @@
+﻿@model Auto
+
+@{
+    ViewData["Title"] = "Delete Auto";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <h3>Are you sure you want to delete this auto?</h3>
+
+    <div class="card mt-4">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="@Model.Image" class="img-fluid rounded-start" alt="@Model.Brand @Model.Model">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Brand @Model.Model</h5>
+                    <p class="card-text">Year: @Model.Year</p>
+                    <p class="card-text">Seats: @Model.PassengerSeats</p>
+                    <p class="card-text">Price: $@Model.PricePerDay/day</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Delete" method="post" class="mt-4">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

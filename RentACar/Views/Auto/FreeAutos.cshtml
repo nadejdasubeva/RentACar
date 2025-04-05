@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Auto>
+
+@{
+    ViewData["Title"] = "Available Autos";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+
+    <form method="get" class="mb-4">
+        <div class="row g-3">
+            <div class="col-md-5">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" class="form-control" name="startDate" required>
+            </div>
+            <div class="col-md-5">
+                <label for="endDate" class="form-label">End Date</label>
+                <input type="date" class="form-control" name="endDate" required>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary">Check Availability</button>
+            </div>
+        </div>
+    </form>
+
+    @if (Model.Any())
+    {
+        <div class="row">
+            @foreach (var auto in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@auto.Image" class="card-img-top" alt="@auto.Brand @auto.Model" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">@auto.Brand @auto.Model</h5>
+                            <p class="card-text">@auto.Description</p>
+                            <a asp-action="Details" asp-route-id="@auto.Id" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            No available autos for the selected dates. Please try different dates.
+        </div>
+    }
+</div>

@@ -12,66 +12,90 @@ namespace RentACar;
 
 public class Program
 {
-    public static void Main(string[] args)
-    {
-        var builder = WebApplication.CreateBuilder(args);
-
-        // Add services to the container.
-        var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-            ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-
-        builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(connectionString));
-
-        builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
-        builder.Services.AddIdentity<User, IdentityRole>()
-        .AddEntityFrameworkStores<ApplicationDbContext>()
-        .AddDefaultUI()
-        .AddDefaultTokenProviders();
-
-        // Add repositories with proper dependencies
-        builder.Services.AddScoped<IPhotoService, PhotoService>();
-        builder.Services.AddScoped<IAutoRepository, AutoRepository>();
-        builder.Services.AddScoped<IRequestRepository, RequestRepository>();
-        builder.Services.AddScoped<IBookingPeriodRepository, BookingPeriodRepository>();
-
-        // Make sure UserRepository is properly registered
-        builder.Services.AddScoped<IUserRepository, UserRepository>();
-        builder.Services.AddScoped<IUserService, UserService>();
-
-        builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
-        builder.Services.AddControllersWithViews();
-        builder.Services.AddRazorPages();
-
-        var app = builder.Build();
-
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
+        public static void Main(string[] args)
         {
-            app.UseMigrationsEndPoint();
-        }
-        else
-        {
-            app.UseExceptionHandler("/Home/Error");
-            app.UseHsts();
+            // Build the host first
+            var host = CreateHostBuilder(args).Build();
+
+            // Initialize admin user (sync-over-async pattern)
+            using (var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                try
+                {
+                    // Use GetAwaiter().GetResult() to bridge sync/async
+                    InitializeAdmin.InitializeAdminAsync(services).GetAwaiter().GetResult();
+                }
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "An error occurred while initializing admin user");
+                }
+            }
+
+            // Run the host
+            host.Run();
         }
 
-        app.UseHttpsRedirection();
-        app.UseStaticFiles();
-        app.UseRouting();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.ConfigureServices((context, services) =>
+                    {
+                        // Add services to the container.
+                        var connectionString = context.Configuration.GetConnectionString("DefaultConnection")
+                            ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-        // Authentication must come before Authorization
-        app.UseAuthentication();
-        app.UseAuthorization();
+                        services.AddDbContext<ApplicationDbContext>(options =>
+                            options.UseSqlServer(connectionString));
 
-        // Simplified endpoint configuration
-        app.MapControllerRoute(
-            name: "default",
-            pattern: "{controller=Home}/{action=Index}/{id?}");
+                        services.AddDatabaseDeveloperPageExceptionFilter();
 
-        app.MapRazorPages();
+                        services.AddIdentity<User, IdentityRole>()
+                            .AddEntityFrameworkStores<ApplicationDbContext>()
+                            .AddDefaultUI()
+                            .AddDefaultTokenProviders();
 
-        app.Run();
-    }
+                        // Add repositories and services
+                        services.AddScoped<IPhotoService, PhotoService>();
+                        services.AddScoped<IAutoRepository, AutoRepository>();
+                        services.AddScoped<IRequestRepository, RequestRepository>();
+                        services.AddScoped<IBookingPeriodRepository, BookingPeriodRepository>();
+                        services.AddScoped<IUserRepository, UserRepository>();
+                        services.AddScoped<IUserService, UserService>();
+
+                        services.Configure<CloudinarySettings>(context.Configuration.GetSection("CloudinarySettings"));
+                        services.AddControllersWithViews();
+                        services.AddRazorPages();
+                    })
+                    .Configure(app =>
+                    {
+                        var env = app.ApplicationServices.GetRequiredService<IWebHostEnvironment>();
+
+                        if (env.IsDevelopment())
+                        {
+                            app.UseMigrationsEndPoint();
+                        }
+                        else
+                        {
+                            app.UseExceptionHandler("/Home/Error");
+                            app.UseHsts();
+                        }
+
+                        app.UseHttpsRedirection();
+                        app.UseStaticFiles();
+                        app.UseRouting();
+                        app.UseAuthentication();
+                        app.UseAuthorization();
+
+                        app.UseEndpoints(endpoints =>
+                        {
+                            endpoints.MapControllerRoute(
+                                name: "default",
+                                pattern: "{controller=Home}/{action=Index}/{id?}");
+                            endpoints.MapRazorPages();
+                        });
+                    });
+                });
 }

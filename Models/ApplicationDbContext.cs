@@ -57,8 +57,7 @@ public class ApplicationDbContext : IdentityDbContext<User>
             ConcurrencyStamp = userConcurrencyStamp
         });
 
-        // Seed admin user
-        builder.Entity<IdentityUser>().HasData(new IdentityUser
+        builder.Entity<User>().HasData(new User  // Changed from IdentityUser to your User class
         {
             Id = adminUserId,
             Email = "admin@admin.com",
@@ -69,12 +68,17 @@ public class ApplicationDbContext : IdentityDbContext<User>
             PasswordHash = adminPasswordHash,
             SecurityStamp = string.Empty,
             ConcurrencyStamp = adminConcurrencyStamp,
-            PhoneNumber = null,
-            PhoneNumberConfirmed = false,
+            PhoneNumber = "+1234567890",  // Now required
+            PhoneNumberConfirmed = true,
             TwoFactorEnabled = false,
             LockoutEnd = null,
             LockoutEnabled = true,
-            AccessFailedCount = 0
+            AccessFailedCount = 0,
+
+            // ADD YOUR CUSTOM FIELDS HERE
+            Firstname = "Admin",
+            Surname = "User",
+            NIN = "ADMIN123456" // Or any valid format
         });
 
         // Set user role to admin
