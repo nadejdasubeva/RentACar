@@ -14,7 +14,7 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Auto> Autos { get; set; }
     public DbSet<Request> Requests { get; set; }
     public DbSet<User> Users { get; set; }
-
+    public DbSet<BookingPeriod> BookingPeriods { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
