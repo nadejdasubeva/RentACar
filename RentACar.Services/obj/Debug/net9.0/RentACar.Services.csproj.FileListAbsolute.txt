@@ -27,3 +27,6 @@ C:\Users\katik\Desktop\git\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.
 C:\Users\katik\Desktop\git\RentACar\RentACar.Services\obj\Debug\net9.0\refint\RentACar.Services.dll
 C:\Users\katik\Desktop\git\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.Services.pdb
 C:\Users\katik\Desktop\git\RentACar\RentACar.Services\obj\Debug\net9.0\ref\RentACar.Services.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Services\bin\Debug\net9.0\RentACar.Data.dll
+C:\Users\pc\Desktop\RentACar\RentACar.Services\bin\Debug\net9.0\RentACar.Data.pdb
+C:\Users\pc\Desktop\RentACar\RentACar.Services\obj\Debug\net9.0\RentACar.37FDC46A.Up2Date
