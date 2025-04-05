@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:\Users\pc\Desktop\RentACar\RentACar\wwwroot\lib\jquery\dist\jquery.slim.js
 C:\Users\pc\Desktop\RentACar\RentACar\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
 C:\Users\pc\Desktop\RentACar\RentACar\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
@@ -60,3 +61,5 @@ C:\Users\pc\Desktop\RentACar\RentACar\wwwroot\lib\jquery-validation\dist\jquery.
 C:\Users\pc\Desktop\RentACar\RentACar\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\pc\Desktop\RentACar\RentACar\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 C:\Users\pc\Desktop\RentACar\RentACar\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+=======
+>>>>>>> Stashed changes
