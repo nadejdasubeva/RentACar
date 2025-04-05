@@ -210,12 +210,10 @@ namespace RentACar.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -259,12 +257,10 @@ namespace RentACar.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -293,9 +289,6 @@ namespace RentACar.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsAvailable")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Model")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -314,6 +307,30 @@ namespace RentACar.Data.Migrations
                     b.ToTable("Autos");
                 });
 
+            modelBuilder.Entity("RentACar.Data.Models.BookingPeriod", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AutoId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AutoId");
+
+                    b.ToTable("BookingPeriod");
+                });
+
             modelBuilder.Entity("RentACar.Data.Models.Request", b =>
                 {
                     b.Property<int>("Id")
@@ -324,6 +341,9 @@ namespace RentACar.Data.Migrations
 
                     b.Property<int>("AutoId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("DateOfRequest")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("IsApproved")
                         .HasColumnType("bit");
@@ -424,6 +444,17 @@ namespace RentACar.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("RentACar.Data.Models.BookingPeriod", b =>
+                {
+                    b.HasOne("RentACar.Data.Models.Auto", "Auto")
+                        .WithMany("Bookings")
+                        .HasForeignKey("AutoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Auto");
+                });
+
             modelBuilder.Entity("RentACar.Data.Models.Request", b =>
                 {
                     b.HasOne("RentACar.Data.Models.Auto", "Auto")
@@ -445,6 +476,8 @@ namespace RentACar.Data.Migrations
 
             modelBuilder.Entity("RentACar.Data.Models.Auto", b =>
                 {
+                    b.Navigation("Bookings");
+
                     b.Navigation("Requests");
                 });
 

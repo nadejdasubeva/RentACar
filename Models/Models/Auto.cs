@@ -31,9 +31,9 @@ namespace RentACar.Data.Models
 
         [Required]
         public int PricePerDay { get; set; }
-        public bool IsAvailable { get; set; } = true;
 
         public virtual List<Request> Requests { get; set; } = new List<Request>();
+        public virtual List<BookingPeriod> Bookings { get; set; } = new List<BookingPeriod>();
 
     }
 }

@@ -1926,7 +1926,9 @@
         "dependencies": {
           "CloudinaryDotNet": "1.27.4",
           "Microsoft.AspNetCore.Http.Features": "2.3.0",
-          "Microsoft.Extensions.Options": "9.0.2"
+          "Microsoft.Extensions.Identity.Core": "9.0.2",
+          "Microsoft.Extensions.Options": "9.0.2",
+          "RentACar.Data": "1.0.0"
         },
         "runtime": {
           "RentACar.Services.dll": {

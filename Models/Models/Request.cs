@@ -27,7 +27,8 @@ namespace RentACar.Data.Models
         public string UserId { get; set; }
         public bool IsApproved { get; set; } = false;
         public bool IsDeclined { get; set; } = false;
-
+        [Required]
+        public DateTime DateOfRequest { get; set; }
         public User User { get; set; }
 
     }
