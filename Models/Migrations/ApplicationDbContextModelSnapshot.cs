@@ -328,7 +328,7 @@ namespace RentACar.Data.Migrations
 
                     b.HasIndex("AutoId");
 
-                    b.ToTable("BookingPeriod");
+                    b.ToTable("BookingPeriods");
                 });
 
             modelBuilder.Entity("RentACar.Data.Models.Request", b =>
@@ -379,10 +379,6 @@ namespace RentACar.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NIN")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Number")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

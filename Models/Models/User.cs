@@ -17,9 +17,9 @@ public class User : IdentityUser
     [Required]
     public string NIN { get; set; }
     [Required]
-    public string Number { get; set; }
+    public override string PhoneNumber { get; set; }
     [Required]
-    public string Email { get; set; }
+    public override string Email { get; set; }
 
     public virtual List<Request> Requests { get; set; } = new List<Request>();
 }

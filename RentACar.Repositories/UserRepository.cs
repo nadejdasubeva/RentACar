@@ -29,17 +29,17 @@ namespace RentACar.Repositories
             _roleManager = roleManager;
         }
 
-        public async Task<bool> AddAsync(User user)
+        public async Task<bool> AddAsync(User user, string password)
         {
-            var result = await _userManager.CreateAsync(user);
+            var result = await _userManager.CreateAsync(user, password);
 
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(user, "BasicUser");
             }
             return result.Succeeded;
-            
         }
+
 
         public async Task<bool> DeleteAsync(User user)
         {
@@ -52,6 +52,14 @@ namespace RentACar.Repositories
                 .Include(u => u.Requests)
                 .ToListAsync();
         }
+
+        public async Task<User> GetByIdAsync(string id)
+        {
+            return await _context.Users
+                .Include(u => u.Requests)
+                .FirstOrDefaultAsync(u => u.Id == id);
+        }
+
         public async Task<bool> SaveAsync()
         {
             var saved = await _context.SaveChangesAsync();

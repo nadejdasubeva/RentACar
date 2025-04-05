@@ -12,7 +12,8 @@ namespace RentACar.Repositories.Interfaces
     {
         //az
         Task<IEnumerable<User>> GetAllAsync();
-        Task<bool> AddAsync(User user);
+        Task<User> GetByIdAsync(string id);
+        Task<bool> AddAsync(User user, string password);
         Task<bool> UpdateAsync(User user);
         Task<bool> DeleteAsync(User user);
         Task<bool> SaveAsync();
