@@ -8,7 +8,7 @@ using RentACar.Data.Models;
 
 namespace RentACar.Repositories.Interfaces
 {
-    internal interface IAutoRepository
+    public interface IAutoRepository
     {
         //az
         Task<IEnumerable<Auto>> GetAllAutosAsync();
