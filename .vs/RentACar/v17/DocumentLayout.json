@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\Desktop\\RentACar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\viewmodels\\editautovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\viewmodels\\editautovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\viewmodels\\createautovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\viewmodels\\createautovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\viewmodels\\createrequestvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\viewmodels\\createrequestvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\viewmodels\\editrequestvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\viewmodels\\editrequestvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\helpers\\datavalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\helpers\\datavalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\rentacar.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\rentacar.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\bookingperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\models\\bookingperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\models\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}|RentACar.Repositories\\RentACar.Repositories.csproj|c:\\users\\pc\\desktop\\rentacar\\rentacar.repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}|RentACar.Repositories\\RentACar.Repositories.csproj|solutionrelative:rentacar.repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,22 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}|RentACar.Services\\RentACar.Services.csproj|c:\\users\\pc\\desktop\\rentacar\\rentacar.services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}|RentACar.Services\\RentACar.Services.csproj|solutionrelative:rentacar.services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\bookingperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\models\\bookingperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\models\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{55D7B05A-86A0-4889-90E1-B337156B21EA}|Controllers\\RentACar.Controllers.csproj|solutionrelative:controllers\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}|RentACar.Repositories\\RentACar.Repositories.csproj|c:\\users\\pc\\desktop\\rentacar\\rentacar.repositories\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3FA077F-C2C0-4B9D-80A2-A51430C98E9C}|RentACar.Repositories\\RentACar.Repositories.csproj|solutionrelative:rentacar.repositories\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}|RentACar.Services\\RentACar.Services.csproj|c:\\users\\pc\\desktop\\rentacar\\rentacar.services\\helpers\\cloudinarysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EBAAC76-8871-4D9C-8263-1ACEC7D904CF}|RentACar.Services\\RentACar.Services.csproj|solutionrelative:rentacar.services\\helpers\\cloudinarysettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -107,10 +127,6 @@
       "RelativeMoniker": "D:0:0:{67BF6021-1AC5-4C49-9E0D-97E6EA9839DE}|RentACar\\RentACar.Web.csproj|solutionrelative:rentacar\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|c:\\users\\pc\\desktop\\rentacar\\models\\rentacar.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F960734E-9687-44E8-9BE0-5F295043CEC3}|Models\\RentACar.Data.csproj|solutionrelative:models\\rentacar.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67BF6021-1AC5-4C49-9E0D-97E6EA9839DE}|RentACar\\RentACar.Web.csproj|c:\\users\\pc\\desktop\\rentacar\\rentacar\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{67BF6021-1AC5-4C49-9E0D-97E6EA9839DE}|RentACar\\RentACar.Web.csproj|solutionrelative:rentacar\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -129,6 +145,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{55D7B05A-86A0-4889-90E1-B337156B21EA}|Controllers\\RentACar.Controllers.csproj|c:\\users\\pc\\desktop\\rentacar\\controllers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55D7B05A-86A0-4889-90E1-B337156B21EA}|Controllers\\RentACar.Controllers.csproj|solutionrelative:controllers\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RentACar.Repositories\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,56 +166,150 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditRequestVM.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ViewModels\\EditRequestVM.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\EditRequestVM.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ViewModels\\EditRequestVM.cs",
+              "RelativeToolTip": "Models\\ViewModels\\EditRequestVM.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwCgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:39:07.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataValidation.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Helpers\\DataValidation.cs",
+              "RelativeDocumentMoniker": "Models\\Helpers\\DataValidation.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Helpers\\DataValidation.cs",
+              "RelativeToolTip": "Models\\Helpers\\DataValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:36:32.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateRequestVM.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ViewModels\\CreateRequestVM.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\CreateRequestVM.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ViewModels\\CreateRequestVM.cs",
+              "RelativeToolTip": "Models\\ViewModels\\CreateRequestVM.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:20:34.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EditAutoVM.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ViewModels\\EditAutoVM.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\EditAutoVM.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ViewModels\\EditAutoVM.cs",
+              "RelativeToolTip": "Models\\ViewModels\\EditAutoVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:16:24.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateAutoVM.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ViewModels\\CreateAutoVM.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\CreateAutoVM.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ViewModels\\CreateAutoVM.cs",
+              "RelativeToolTip": "Models\\ViewModels\\CreateAutoVM.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:02:17.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Auto.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\Auto.cs",
+              "RelativeDocumentMoniker": "Models\\Models\\Auto.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\Auto.cs",
+              "RelativeToolTip": "Models\\Models\\Auto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:49:26.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingPeriod.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\BookingPeriod.cs",
+              "RelativeDocumentMoniker": "Models\\Models\\BookingPeriod.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\BookingPeriod.cs",
+              "RelativeToolTip": "Models\\Models\\BookingPeriod.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:48:54.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T07:58:22.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\Request.cs",
+              "RelativeDocumentMoniker": "Models\\Models\\Request.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\Request.cs",
+              "RelativeToolTip": "Models\\Models\\Request.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwB8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:54:46.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RentACar.Data.csproj",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj",
+              "RelativeDocumentMoniker": "Models\\RentACar.Data.csproj",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj",
+              "RelativeToolTip": "Models\\RentACar.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-09T08:39:32.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "RentACar.Repositories\\UserRepository.cs",
               "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\UserRepository.cs",
               "RelativeToolTip": "RentACar.Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwBsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T16:04:10.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\AutoRepository.cs",
-              "RelativeDocumentMoniker": "RentACar.Repositories\\AutoRepository.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\AutoRepository.cs",
-              "RelativeToolTip": "RentACar.Repositories\\AutoRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwDIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T15:48:15.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Auto.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\Auto.cs",
-              "RelativeDocumentMoniker": "Models\\Models\\Auto.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\Auto.cs",
-              "RelativeToolTip": "Models\\Models\\Auto.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA0wCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:49:26.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "RentACar.Repositories\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "RentACar.Repositories\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T13:08:32.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\Models\\User.cs",
@@ -207,43 +321,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookingPeriod.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\BookingPeriod.cs",
-              "RelativeDocumentMoniker": "Models\\Models\\BookingPeriod.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\BookingPeriod.cs",
-              "RelativeToolTip": "Models\\Models\\BookingPeriod.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "RentACar.Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "RentACar.Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T13:48:54.354Z"
+              "WhenOpened": "2025-04-05T13:08:32.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "AutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\AutoRepository.cs",
+              "RelativeDocumentMoniker": "RentACar.Repositories\\AutoRepository.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\AutoRepository.cs",
+              "RelativeToolTip": "RentACar.Repositories\\AutoRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwDIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T07:58:22.37Z"
+              "WhenOpened": "2025-04-05T15:48:15.697Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Request.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\Request.cs",
-              "RelativeDocumentMoniker": "Models\\Models\\Request.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Models\\Request.cs",
-              "RelativeToolTip": "Models\\Models\\Request.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvyIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:54:46.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\UserService.cs",
               "RelativeDocumentMoniker": "RentACar.Services\\UserService.cs",
@@ -255,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "IAutoRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Interfaces\\IAutoRepository.cs",
               "RelativeDocumentMoniker": "RentACar.Repositories\\Interfaces\\IAutoRepository.cs",
@@ -267,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "IBookingPeriodRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Interfaces\\IBookingPeriodRepository.cs",
               "RelativeDocumentMoniker": "RentACar.Repositories\\Interfaces\\IBookingPeriodRepository.cs",
@@ -279,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "IRequestRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Interfaces\\IRequestRepository.cs",
               "RelativeDocumentMoniker": "RentACar.Repositories\\Interfaces\\IRequestRepository.cs",
@@ -291,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\appsettings.json",
               "RelativeDocumentMoniker": "RentACar\\appsettings.json",
@@ -303,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "RentACar.Services\\Interfaces\\IUserService.cs",
@@ -315,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\Program.cs",
               "RelativeDocumentMoniker": "RentACar\\Program.cs",
@@ -327,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "IPhotoServices.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\Interfaces\\IPhotoServices.cs",
               "RelativeDocumentMoniker": "RentACar.Services\\Interfaces\\IPhotoServices.cs",
@@ -339,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
@@ -351,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Controllers\\Class1.cs",
               "RelativeDocumentMoniker": "Controllers\\Class1.cs",
@@ -363,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 36,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Class1.cs",
               "RelativeDocumentMoniker": "RentACar.Repositories\\Class1.cs",
@@ -375,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "BookingResult.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\Helpers\\BookingResult.cs",
               "RelativeDocumentMoniker": "RentACar.Repositories\\Helpers\\BookingResult.cs",
@@ -387,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "CloudinarySettings.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\Helpers\\CloudinarySettings.cs",
               "RelativeDocumentMoniker": "RentACar.Services\\Helpers\\CloudinarySettings.cs",
@@ -399,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "20250405132108_AddDateOfRequestToRequests.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Migrations\\20250405132108_AddDateOfRequestToRequests.cs",
               "RelativeDocumentMoniker": "Models\\Migrations\\20250405132108_AddDateOfRequestToRequests.cs",
@@ -411,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "20250404182210_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\Migrations\\20250404182210_InitialCreate.cs",
               "RelativeDocumentMoniker": "Models\\Migrations\\20250404182210_InitialCreate.cs",
@@ -423,19 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RentACar.Data.csproj",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj",
-              "RelativeDocumentMoniker": "Models\\RentACar.Data.csproj",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj",
-              "RelativeToolTip": "Models\\RentACar.Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-09T08:39:32.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "RentACar\\Views\\Shared\\Error.cshtml",
@@ -447,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "RentACar.Web",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\RentACar.Web.csproj",
               "RelativeDocumentMoniker": "RentACar\\RentACar.Web.csproj",
@@ -458,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "RentACar.Web.csproj",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\RentACar.Web.csproj",
               "RelativeDocumentMoniker": "RentACar\\RentACar.Web.csproj",
@@ -470,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "RentACar\\Views\\_ViewImports.cshtml",
@@ -482,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "RentACar.Repositories.csproj",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj",
               "RelativeDocumentMoniker": "RentACar.Repositories\\RentACar.Repositories.csproj",
@@ -494,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "RentACar.Services.csproj",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\RentACar.Services.csproj",
               "RelativeDocumentMoniker": "RentACar.Services\\RentACar.Services.csproj",
@@ -506,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "RentACar.Controllers.csproj",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Controllers\\RentACar.Controllers.csproj",
               "RelativeDocumentMoniker": "Controllers\\RentACar.Controllers.csproj",
@@ -518,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\RentACar\\Controllers\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\Controllers\\HomeController.cs",
