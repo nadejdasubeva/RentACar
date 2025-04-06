@@ -17,117 +17,129 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RentACar.Web
 build_property.RootNamespace = RentACar.Web
-build_property.ProjectDir = C:\Users\katik\Desktop\git\RentACar\RentACar\
+build_property.ProjectDir = C:\Users\pc\Desktop\RentACar\RentACar\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\katik\Desktop\git\RentACar\RentACar
+build_property.MSBuildProjectDirectory = C:\Users\pc\Desktop\RentACar\RentACar
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Auto/Create.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Auto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Auto/Delete.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Auto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Auto/Details.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Auto/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Auto/Edit.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Auto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Auto/FreeAutos.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Auto/FreeAutos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xGcmVlQXV0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Auto/Index.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Auto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Home/Index.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/EditUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdFVzZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/GetAllUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2V0QWxsVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/GetUserById/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2V0VXNlckJ5SWRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Home/Privacy.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Request/Create.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Request/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Request/Delete.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Request/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Request/Details.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Request/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Request/Index.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Request/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Request/MyRequests.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Request/MyRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxNeVJlcXVlc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Request/_AutoSelectionPartial.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Request/_AutoSelectionPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxfQXV0b1NlbGVjdGlvblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Shared/Error.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/User/Create.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/User/Delete.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/User/Details.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/User/Edit.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/User/Index.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/_ViewImports.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/_ViewStart.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katik/Desktop/git/RentACar/RentACar/Views/Shared/_Layout.cshtml]
+[C:/Users/pc/Desktop/RentACar/RentACar/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ir31k2e0sg
