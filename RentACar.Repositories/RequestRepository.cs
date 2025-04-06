@@ -31,6 +31,7 @@ namespace RentACar.Repositories
         {
             return await _context.Requests
                 .Where(x => x.UserId == userId)
+                .Include(x => x.Auto)
                 .ToListAsync();
         }
 
@@ -49,7 +50,10 @@ namespace RentACar.Repositories
         }
         public async Task<Request> GetRequestByIdAsync(int id)
         {
-            return await _context.Requests.Where(x => x.Id == id).FirstOrDefaultAsync();
+            return await _context.Requests.Where(x => x.Id == id)
+                                          .Include(x => x.User)
+                                          .Include(x => x.Auto)
+                                          .FirstOrDefaultAsync();
         }
         public async Task<bool> ApproveRequest(int requestId)
         {
