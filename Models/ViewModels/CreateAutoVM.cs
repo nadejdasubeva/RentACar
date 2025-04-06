@@ -29,7 +29,7 @@ namespace RentACar.Data.ViewModels
         public int PassengerSeats { get; set; }
 
         [StringLength(500, ErrorMessage = "Description cannot be longer than 500 characters")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Required(ErrorMessage = "Price per day is required")]
         [Range(1, 10000, ErrorMessage = "Price must be between 1 and 10,000")]

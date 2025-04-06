@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System.Reflection.Emit;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RentACar.Data.Models;
@@ -30,6 +31,18 @@ public class ApplicationDbContext : IdentityDbContext<User>
             .WithMany(u => u.Requests)
             .HasForeignKey(r => r.UserId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        builder.Entity<User>()
+           .HasIndex(u => u.NIN)
+        .IsUnique();
+
+        builder.Entity<User>()
+            .HasIndex(u => u.Email)
+        .IsUnique();
+
+        builder.Entity<User>()
+            .HasIndex(u => u.UserName)
+            .IsUnique();
 
         // Constants for seeded data
         const string adminUserId = "a820ccf9-54ac-4047-b4b5-48dab0dc962b";

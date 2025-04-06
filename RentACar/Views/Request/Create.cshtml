@@ -1,0 +1,84 @@
+﻿@using RentACar.Data.ViewModels
+@model CreateRequestVM
+
+@{
+    ViewData["Title"] = "Create Rental Request";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+
+    <form id="availabilityForm" method="post" asp-action="CheckAvailability" data-ajax="true" data-ajax-update="#autoSelection" data-ajax-mode="replace">
+        >
+        @Html.AntiForgeryToken()
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="PickUpDate" class="form-label"></label>
+                <input asp-for="PickUpDate" type="date" class="form-control"
+                       min="@DateTime.Today.AddDays(1).ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="PickUpDate" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="ReturnDate" class="form-label"></label>
+                <input asp-for="ReturnDate" type="date" class="form-control"
+                       min="@DateTime.Today.AddDays(2).ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="ReturnDate" class="text-danger"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">
+            Check Availability
+            <span id="loadingSpinner" class="spinner-border spinner-border-sm d-none"></span>
+        </button>
+    </form>
+
+    <div id="autoSelection">
+        @if (Model.AvailableAutos != null && Model.AvailableAutos.Any())
+        {
+            @Html.Partial("_AutoSelectionPartial", Model)
+        }
+    </div>
+
+
+    <!-- Hidden form for final submission -->
+    <form asp-action="Create" method="post" id="bookingForm" class="d-none mt-4">
+        <input type="hidden" asp-for="PickUpDate" />
+        <input type="hidden" asp-for="ReturnDate" />
+        <input type="hidden" asp-for="AutoId" />
+        <button type="submit" class="btn btn-success">Confirm Booking</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/lib/jquery-ajax-unobtrusive/dist/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script>
+                $(function() {
+            // Initialize unobtrusive AJAX with proper error handling
+            $(document).ajaxError(function(event, xhr) {
+                $('#loadingSpinner').addClass('d-none');
+                let errorMsg = xhr.responseText || "Error checking availability";
+                $('#autoSelection').html(`<div class="alert alert-danger">${errorMsg}</div>`);
+            });
+
+            // Date validation
+            $('#PickUpDate, #ReturnDate').change(function() {
+                const pickUp = new Date($('#PickUpDate').val());
+                const ret = new Date($('#ReturnDate').val());
+
+                if (pickUp >= ret) {
+                    $('#autoSelection').html(
+                        '<div class="alert alert-warning">Return date must be after pick-up date</div>'
+                    );
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js"></script>
+}

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -16,6 +17,8 @@ public class User : IdentityUser
     public string Surname { get; set; }
     [Required]
     public string NIN { get; set; }
+    [Required]
+    public override string UserName { get; set; }
     [Required]
     public override string PhoneNumber { get; set; }
     [Required]

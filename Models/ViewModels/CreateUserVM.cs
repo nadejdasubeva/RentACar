@@ -11,6 +11,8 @@ namespace RentACar.Data.ViewModels
     public class CreateUserVM
     {
         [Required(ErrorMessage = "First name is required.")]
+        public string UserName { get; set; }
+        [Required(ErrorMessage = "First name is required.")]
         public string Firstname { get; set; }
 
         [Required(ErrorMessage = "Surname is required.")]
@@ -28,11 +30,15 @@ namespace RentACar.Data.ViewModels
         [EmailAddress(ErrorMessage = "Invalid email address format.")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Password is required.")]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "Password must be at least 6 characters.")]
         [DataType(DataType.Password)]
+        [Required(ErrorMessage = "Password is required")]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
         public string Password { get; set; }
 
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm password")]
+        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        public string ConfirmPassword { get; set; }
         public virtual List<Request> Requests { get; set; } = new();
     }
 

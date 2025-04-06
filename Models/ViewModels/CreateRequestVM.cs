@@ -28,5 +28,6 @@ namespace RentACar.Data.ViewModels
         [DataType(DataType.Date)]
         [DateAfter(nameof(PickUpDate), ErrorMessage = "Return date must be after pick-up date")]
         public DateTime ReturnDate { get; set; } = DateTime.Today.AddDays(2);
+        public IEnumerable<Auto> AvailableAutos { get; set; } = new List<Auto>();
     }
 }

@@ -1,3 +1,4 @@
+using System.Reflection.Emit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RentACar.Data;
@@ -88,12 +89,15 @@ public class Program
                         app.UseRouting();
                         app.UseAuthentication();
                         app.UseAuthorization();
-
                         app.UseEndpoints(endpoints =>
                         {
+                            // This must come first
+                            endpoints.MapControllers(); // Enables attribute routing
+
                             endpoints.MapControllerRoute(
                                 name: "default",
                                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
                             endpoints.MapRazorPages();
                         });
                     });

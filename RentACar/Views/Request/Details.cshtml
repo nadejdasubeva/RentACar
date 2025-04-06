@@ -1,0 +1,50 @@
+﻿@model Request
+
+@{
+    ViewData["Title"] = "Request Details";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+
+    <dl class="row">
+        <dt class="col-sm-3">Request Date</dt>
+        <dd class="col-sm-9">@Model.DateOfRequest.ToString("g")</dd>
+
+        <dt class="col-sm-3">User</dt>
+        <dd class="col-sm-9">@Model.User.Email</dd>
+
+        <dt class="col-sm-3">Vehicle</dt>
+        <dd class="col-sm-9">@Model.Auto.Brand @Model.Auto.Model (@Model.Auto.Year)</dd>
+
+        <dt class="col-sm-3">Pick-Up Date</dt>
+        <dd class="col-sm-9">@Model.PickUpDate.ToString("d")</dd>
+
+        <dt class="col-sm-3">Return Date</dt>
+        <dd class="col-sm-9">@Model.ReturnDate.ToString("d")</dd>
+
+        <dt class="col-sm-3">Status</dt>
+        <dd class="col-sm-9">
+            @if (Model.IsApproved)
+            {
+                <span class="badge bg-success">Approved</span>
+            }
+            else if (Model.IsDeclined)
+            {
+                <span class="badge bg-danger">Declined</span>
+            }
+            else
+            {
+                <span class="badge bg-warning">Pending</span>
+            }
+        </dd>
+    </dl>
+
+    <div class="mt-4">
+        <a asp-action="@(User.IsInRole("Administrator") ? "Index" : "MyRequests")" class="btn btn-secondary">Back to List</a>
+        @if (!Model.IsApproved && !Model.IsDeclined)
+        {
+            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+        }
+    </div>
+</div>
