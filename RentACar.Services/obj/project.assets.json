@@ -2584,6 +2584,20 @@
         "runtime": {
           "bin/placeholder/RentACar.Data.dll": {}
         }
+      },
+      "RentACar.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "RentACar.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RentACar.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RentACar.Repositories.dll": {}
+        }
       }
     }
   },
@@ -7481,6 +7495,11 @@
       "type": "project",
       "path": "../Models/RentACar.Data.csproj",
       "msbuildProject": "../Models/RentACar.Data.csproj"
+    },
+    "RentACar.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../RentACar.Repositories/RentACar.Repositories.csproj",
+      "msbuildProject": "../RentACar.Repositories/RentACar.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7491,7 +7510,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
       "Microsoft.Extensions.Identity.Core >= 9.0.3",
       "Microsoft.Extensions.Options >= 9.0.3",
-      "RentACar.Data >= 1.0.0"
+      "RentACar.Data >= 1.0.0",
+      "RentACar.Repositories >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7528,6 +7548,12 @@
           "projectReferences": {
             "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj": {
               "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj"
+<<<<<<< Updated upstream
+=======
+            },
+            "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj": {
+              "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj"
+>>>>>>> Stashed changes
             }
           }
         }

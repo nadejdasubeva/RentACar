@@ -9,6 +9,7 @@ namespace RentACar.Services.Interfaces
     public interface IUserService
     {
         Task<bool> ChangeRoleAsync(string userId);
+        Task<bool> SetRoleAsync(string userId, string roleName);
     }
 
 }

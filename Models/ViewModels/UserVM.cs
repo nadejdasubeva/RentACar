@@ -10,6 +10,7 @@ namespace RentACar.Data.ViewModels
 {
     public class UserVM
     {
+            public string Id { get; set; }
             [Required(ErrorMessage = "First name is required.")]
             public string Firstname { get; set; }
 

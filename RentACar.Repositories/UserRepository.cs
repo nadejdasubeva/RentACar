@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
@@ -29,6 +30,10 @@ namespace RentACar.Repositories
             _roleManager = roleManager;
         }
 
+        public async Task<bool> AnyAsync(Expression<Func<User, bool>> predicate)
+        {
+            return await _context.Users.AnyAsync(predicate);
+        }
         public async Task<bool> AddAsync(User user, string password)
         {
             var result = await _userManager.CreateAsync(user, password);

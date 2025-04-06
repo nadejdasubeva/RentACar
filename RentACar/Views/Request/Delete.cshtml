@@ -1,0 +1,27 @@
+﻿@model Request
+
+@{
+    ViewData["Title"] = "Delete Request";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    <h4>Are you sure you want to delete this request?</h4>
+
+    <dl class="row mt-4">
+        <dt class="col-sm-3">Vehicle</dt>
+        <dd class="col-sm-9">@Model.Auto.Brand @Model.Auto.Model</dd>
+
+        <dt class="col-sm-3">Pick-Up Date</dt>
+        <dd class="col-sm-9">@Model.PickUpDate.ToString("d")</dd>
+
+        <dt class="col-sm-3">Return Date</dt>
+        <dd class="col-sm-9">@Model.ReturnDate.ToString("d")</dd>
+    </dl>
+
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="@(User.IsInRole("Administrator") ? "Index" : "MyRequests")" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

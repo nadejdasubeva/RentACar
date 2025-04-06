@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Request>
+
+@{
+    ViewData["Title"] = "Request Management";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <!-- Filter Tabs -->
+    <ul class="nav nav-tabs mb-4">
+        <li class="nav-item">
+            <a class="nav-link @(ViewBag.CurrentFilter == "all" ? "active" : "")"
+               asp-action="Index" asp-route-filter="all" asp-route-sortOrder="@ViewBag.CurrentSort">All Requests</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewBag.CurrentFilter == "pending" ? "active" : "")"
+               asp-action="Index" asp-route-filter="pending" asp-route-sortOrder="@ViewBag.CurrentSort">Pending</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(ViewBag.CurrentFilter == "processed" ? "active" : "")"
+               asp-action="Index" asp-route-filter="processed" asp-route-sortOrder="@ViewBag.CurrentSort">Processed</a>
+        </li>
+    </ul>
+
+    <!-- Sort Dropdown -->
+    <div class="dropdown mb-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown">
+            Sort By: @(ViewBag.CurrentSort switch
+            {
+                "oldest" => "Oldest First",
+                "status" => "By Status",
+                _ => "Newest First"
+            })
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" asp-action="Index" asp-route-filter="@ViewBag.CurrentFilter" asp-route-sortOrder="newest">Newest First</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-filter="@ViewBag.CurrentFilter" asp-route-sortOrder="oldest">Oldest First</a></li>
+            <li><a class="dropdown-item" asp-action="Index" asp-route-filter="@ViewBag.CurrentFilter" asp-route-sortOrder="status">By Status</a></li>
+        </ul>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Vehicle</th>
+                <th>Request Date</th>
+                <th>Pick-Up Date</th>
+                <th>Return Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in Model)
+            {
+                <tr>
+                    <td>@request.User.Email</td>
+                    <td>@request.Auto.Brand @request.Auto.Model</td>
+                    <td>@request.DateOfRequest.ToString("g")</td>
+                    <td>@request.PickUpDate.ToString("d")</td>
+                    <td>@request.ReturnDate.ToString("d")</td>
+                    <td>
+                        @if (request.IsApproved)
+                        {
+                            <span class="badge bg-success">Approved</span>
+                        }
+                        else if (request.IsDeclined)
+                        {
+                            <span class="badge bg-danger">Declined</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning">Pending</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@request.Id" class="btn btn-sm btn-info">Details</a>
+                        @if (!request.IsApproved && !request.IsDeclined)
+                        {
+                            <form asp-action="Approve" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@request.Id" />
+                                <button type="submit" class="btn btn-sm btn-success">Approve</button>
+                            </form>
+                            <form asp-action="Decline" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@request.Id" />
+                                <button type="submit" class="btn btn-sm btn-danger">Decline</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

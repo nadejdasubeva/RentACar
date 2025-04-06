@@ -301,6 +301,12 @@
             "projectReferences": {
               "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj": {
                 "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj"
+<<<<<<< Updated upstream
+=======
+              },
+              "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj": {
+                "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj"
+>>>>>>> Stashed changes
               }
             }
           }

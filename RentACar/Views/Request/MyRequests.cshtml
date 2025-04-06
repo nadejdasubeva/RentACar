@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Request>
+
+@{
+    ViewData["Title"] = "My Requests";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Vehicle</th>
+                <th>Request Date</th>
+                <th>Pick-Up Date</th>
+                <th>Return Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in Model)
+            {
+                <tr>
+                    <td>@request.Auto.Brand @request.Auto.Model</td>
+                    <td>@request.DateOfRequest.ToString("g")</td>
+                    <td>@request.PickUpDate.ToString("d")</td>
+                    <td>@request.ReturnDate.ToString("d")</td>
+                    <td>
+                        @if (request.IsApproved)
+                        {
+                            <span class="badge bg-success">Approved</span>
+                        }
+                        else if (request.IsDeclined)
+                        {
+                            <span class="badge bg-danger">Declined</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning">Pending</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@request.Id" class="btn btn-sm btn-info">Details</a>
+                        @if (!request.IsApproved && !request.IsDeclined)
+                        {
+                            <a asp-action="Delete" asp-route-id="@request.Id" class="btn btn-sm btn-danger">Cancel</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

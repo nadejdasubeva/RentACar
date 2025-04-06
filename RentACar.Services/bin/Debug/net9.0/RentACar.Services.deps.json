@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
           "Microsoft.Extensions.Identity.Core": "9.0.3",
           "Microsoft.Extensions.Options": "9.0.3",
-          "RentACar.Data": "1.0.0"
+          "RentACar.Data": "1.0.0",
+          "RentACar.Repositories": "1.0.0"
         },
         "runtime": {
           "RentACar.Services.dll": {}
@@ -1994,6 +1995,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "RentACar.Repositories/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "RentACar.Data": "1.0.0"
+        },
+        "runtime": {
+          "RentACar.Repositories.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -3306,6 +3319,11 @@
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
     "RentACar.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RentACar.Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

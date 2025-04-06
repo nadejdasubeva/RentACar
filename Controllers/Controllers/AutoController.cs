@@ -164,7 +164,7 @@ namespace RentACar.Controllers.Controllers
 
         [Authorize(Roles = "Administrator")]
         [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteIdea(int id)
+        public async Task<IActionResult> DeleteAuto(int id)
         {
             Auto auto = await _autoRepository.GetAutoByIdAsync(id);
             if (auto == null)
