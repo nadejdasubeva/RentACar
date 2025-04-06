@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj": {}
+    "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\RentACar.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj": {
+    "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj",
         "projectName": "RentACar.Data",
-        "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj",
-        "packagesPath": "C:\\Users\\katik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\katik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,6 +56,10 @@
               "version": "[9.0.3, )"
             },
             "Microsoft.AspNetCore.Mvc.DataAnnotations": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.TagHelpers": {
               "target": "Package",
               "version": "[2.3.0, )"
             },
@@ -99,31 +104,20 @@
         }
       }
     },
-<<<<<<< Updated upstream
-    "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj": {
+    "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj",
-        "projectName": "RentACar.Services",
-        "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj",
-        "packagesPath": "C:\\Users\\katik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\obj\\",
-=======
-    "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj",
         "projectName": "RentACar.Repositories",
-        "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj",
-        "packagesPath": "C:\\Users\\katik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\obj\\",
->>>>>>> Stashed changes
+        "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\katik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -132,16 +126,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj": {
-                "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj"
-<<<<<<< Updated upstream
-=======
+              "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj": {
+                "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj"
               }
             }
           }
@@ -187,20 +180,20 @@
         }
       }
     },
-    "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj": {
+    "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\RentACar.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\RentACar.Services.csproj",
         "projectName": "RentACar.Services",
-        "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\RentACar.Services.csproj",
-        "packagesPath": "C:\\Users\\katik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Services\\obj\\",
+        "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\RentACar.Services.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\katik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -209,18 +202,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj": {
-                "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\Models\\RentACar.Data.csproj"
+              "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj": {
+                "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\Models\\RentACar.Data.csproj"
               },
-              "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj": {
-                "projectPath": "C:\\Users\\katik\\Desktop\\git\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj"
->>>>>>> Stashed changes
+              "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj": {
+                "projectPath": "C:\\Users\\pc\\Desktop\\RentACar\\RentACar.Repositories\\RentACar.Repositories.csproj"
               }
             }
           }
