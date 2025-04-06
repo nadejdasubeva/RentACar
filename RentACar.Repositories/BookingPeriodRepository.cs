@@ -55,6 +55,14 @@ namespace RentACar.Repositories
                     b.EndDate > startDate);
             }    
         }
+        public async Task<List<BookingPeriod>> GetConflictingBookingsAsync(int autoId, DateTime pickUpDate, DateTime returnDate)
+        {
+            return await _context.BookingPeriods
+                .Where(bp => bp.AutoId == autoId &&
+                            pickUpDate <= bp.EndDate &&
+                            returnDate >= bp.StartDate)
+                .ToListAsync();
+        }
 
         public async Task<bool> SaveAsync()
         {
